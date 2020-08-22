@@ -1,4 +1,4 @@
-package com.springboot.Controller;
+package com.springboot.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -60,7 +60,7 @@ public class Controller {
 		employeeDao.deleteById(employeeId);
 		Map<String, Boolean>  resp = new HashMap<String,Boolean>();
 		resp.put("deleted",Boolean.TRUE);
-		return ResponseEntity.ok(resp);
+		return ResponseEntity.ok(resp);an
 	}
 	
 }
