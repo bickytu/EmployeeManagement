@@ -1,0 +1,15 @@
+package com.springboot.Exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(value = HttpStatus.NOT_FOUND)
+public class ResourceNotFoundException extends RuntimeException {
+
+	private static final long serialVersionUID = 1564623543123123162L;
+	
+	public ResourceNotFoundException(String message) {
+		super(message);
+	}
+
+}
